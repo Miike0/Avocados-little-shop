@@ -6,7 +6,7 @@
     "lint": "prettier --check \"src/**/*.js\"",
     "pre-commit": "pretty-quick --staged",
     "install:husky": "husky install",
-    "homepage": "https://Miike0.github.io/Avocados-little-shop"
+    "homepage": "https://miike0.github.io/Avocados-little-shop"
   },
   "devDependencies": {
     "husky": "7",
