@@ -38,21 +38,21 @@ window.fetch(`${baseURL}/api/avo`)
             price.textContent = formatPrice(item.price);
 
             const description = document.createElement('p');
-            description.className = "w-96 h-50 text-xs indent-8 text-justify flex justify-center items-center m-2";
+            description.className = "w-auto h-auto text-xs indent-8 text-justify flex justify-center items-center m-2";
             description.textContent = item.attributes.description;
 
             const elementsLeftContainer = document.createElement('div');
-            elementsLeftContainer.className = "w-60 h-50 flex flex-col justify-center items-center m-2";
+            elementsLeftContainer.className = "w-auto h-50 flex flex-col justify-center items-center m-2";
             elementsLeftContainer.append(image, tittle, price);
 
 
             const descriptionContainer = document.createElement('div');
-            descriptionContainer.className = "w-96 h-40 flex justify-center items-center m-2 border-l-2";
+            descriptionContainer.className = "w-auto h-auto flex justify-center items-center m-2 border-l-2";
             descriptionContainer.append(description);
 
 
             const container = document.createElement('div');
-            container.className = "w-2/5 h-50 flex justify-center m-10";
+            container.className = "w-2/5 h-auto flex justify-center m-10";
             container.append(elementsLeftContainer, descriptionContainer);
             
 
